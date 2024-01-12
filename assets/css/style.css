@@ -1,0 +1,91 @@
+/* All */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+#header {
+    /* height: 46px; */
+    background-color: white;
+    border-bottom: 3px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#nav li {
+    display: inline-block;
+    border-right: 1px solid black;
+}
+#nav li a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 18px 24px;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav>li>a {
+    text-transform: uppercase;
+}
+#header #nav {
+    text-align: center;
+}
+/* ========================= */
+/* content */
+.tieudechinh {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
+#content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 250px;
+    margin-bottom: 100px;
+}
+#content .item {
+    float: left;
+    width: 300px;
+    text-align: justify;
+    margin-top: 40px;
+    border: 1px solid #24e10f53;
+    padding-bottom: 10px;
+    border-radius: 8px;
+}
+.item .img {
+    width: 300px;
+    margin-bottom: 3px;
+}
+.item .paragraph {
+    margin-top: 8px;
+}
+#content .item .tieudephu {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* ////////////////// */
+/* Responsive Mobile */
+@media (max-width: 740px) {
+    #content {
+        display: flex;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    #content .tieudechinh {
+        margin-top: 180px
+    }
+}
+

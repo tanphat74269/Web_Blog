@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+#header {
+    /* height: 46px; */
+    background-color: white;
+    border-bottom: 3px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#nav li {
+    display: inline-block;
+    border-right: 1px solid black;
+}
+#nav li a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 18px 24px;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav>li>a {
+    text-transform: uppercase;
+}
+#header #nav {
+    text-align: center;
+}
+
+/* admin */
+.img-admin {
+    margin-top: 70px; 
+    text-align: center;
+}
+.admin .img {
+    width: 400px;
+}
+.admin .chu-thich-anh {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.admin .paragraph-admin {
+    text-align: justify;
+    margin: 5px 450px;
+    margin-bottom: 80px;
+    line-height: 25px;
+}
+
+/* ///////////////// */
+/* Responsive mobile */
+@media (max-width: 740px) {
+    .admin .img{
+        width: 350px;
+    }
+    .admin {
+        margin-top: 170px;    
+    }
+    .admin .paragraph-admin {
+        margin: 5px 30px;
+        margin-bottom: 80px;
+    }
+}
