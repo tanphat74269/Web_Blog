@@ -38,6 +38,7 @@ html {
 #header #nav {
     text-align: center;
 }
+
 /* ========================= */
 /* content */
 .tieudechinh {
@@ -75,6 +76,18 @@ html {
     font-size: 18px;
 }
 
+/* footer */
+#footer {
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+
 /* ////////////////// */
 /* Responsive Mobile */
 @media (max-width: 740px) {
@@ -88,4 +101,6 @@ html {
         margin-top: 180px
     }
 }
+
+
 

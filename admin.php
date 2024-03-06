@@ -4,28 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
-    <link rel="icon" type="image/x-icon" href="/assets/img/anhdaidien.jpg">
-    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/anhdaidien.jpg">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
 </head>
 <body>
     <!-- header -->
-    <div id="header">
-        <ul id="nav">
-            <li style="border-left: 1px solid black;"><a href="/index.html">Trang chủ</a></li>
-                <li><a href="/page/dulich.html">Du lịch</a></li>
-                <li><a href="/page/henho.html">Hẹn hò</a></li>
-                <li><a href="/page/kienthucxahoi.html">Kiến thức xã hội</a></li>
-                <li><a href="/page/tienbac.html">Tiền bạc</a></li>
-                <li><a href="/page/tienganh.html">Tiếng anh</a></li>
-                <li><a href="/page/laptrinh.html">Lập trình</a></li>
-                <li><a href="/page/admin.html">Admin</a></li>
-        </ul>
-    </div>
+    <?php
+    require_once('./header.php');
+    ?>
 
     <!-- admin -->
     <div class="admin" >
         <div class="img-admin">
-            <img class="img" src="/assets/img/anhdaidien.jpg" alt="">
+            <img class="img" src="./assets/img/anhdaidien.jpg" alt="">
             <h1 class="chu-thich-anh">Tôi là Huỳnh Tấn Phát</h1> 
         </div> 
         <div class="paragraph-admin">
@@ -34,6 +26,11 @@
             </p>
         </div>
     </div>  
+
+    <!-- footer -->
+    <?php
+    require_once('./footer.php');
+    ?>
 </body>
 </html>
 
