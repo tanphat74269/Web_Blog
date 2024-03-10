@@ -11,7 +11,7 @@
     <div id="main">
         <!-- header -->
         <?php
-        require_once('./header.php');
+        include_once('./header.php');
         ?>
         
         <!-- content -->
@@ -67,7 +67,7 @@
     
     <!-- footer -->
     <?php
-    require_once('./footer.php');
+    include_once('./footer.php');
     ?>
 </body>
 </html>

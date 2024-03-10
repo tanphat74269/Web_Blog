@@ -16,7 +16,7 @@ require_once('./db/dbhelper.php');
     <div id="main">
         <!-- header -->
         <?php
-        require_once('./header.php');
+        include_once('./header.php');
         ?>
         <!-- content -->
         <div id="content">
@@ -31,7 +31,7 @@ require_once('./db/dbhelper.php');
     
     <!-- footer -->
     <?php
-    require_once('./footer.php');
+    include_once('./footer.php');
     ?>
 </body>
 </html>

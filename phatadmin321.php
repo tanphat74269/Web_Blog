@@ -1,33 +1,50 @@
-<?php
-require_once('../db/dbhelper.php');
-require_once('../utils/utility.php');
-
-$tieude = $mota = '';
-if(!empty($_POST)) {
-    $tieude = getPOST('tieude');
-    $mota = getPOST('mota');
-    $img = $_POST['img'];
-    
-    if($tieude != '' && $mota != '') {
-        $sql = "insert into danhsachbaiviet(img, tieude, mota) values('$img','$tieude','$mota')";
-        execute($sql);
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang quản lý</title>
+    <link rel="stylesheet" href="./assets/css/trang_quanly.css">
 </head>
 <body>
-    <form method="POST" action="">
-        <input type="file" name="img" accept=".jpg, .jpeg, .png" value=""> <br>
-        <input type="text" name="tieude"> <br>
-        <input type="text" name="mota"> <br>
-        <button type="submit">Thêm</button>
-    </form>
+    <!-- header -->
+    <div class="area"></div>
+    <nav class="main-menu">
+        <ul>
+            <li class="has-subnav">
+                <a href="#">
+                    <i class="fa fa-globe fa-2x"></i>
+                    <span class="nav-text">
+                        Global Surveyors
+                    </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a href="#">
+                    <i class="fa fa-comments fa-2x"></i>
+                    <span class="nav-text">
+                        Group Hub Forums
+                    </span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                    <span class="nav-text">
+                        Member Map
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-info fa-2x"></i>
+                    <span class="nav-text">
+                        Documentation
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
