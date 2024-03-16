@@ -1,3 +1,7 @@
 # blog
-Đây là trang blog với ngôn ngữ php
+Trang blog cá nhân
+
+công nghệ sử dụng:
+- backend: php
+- frontend: html, css
 
