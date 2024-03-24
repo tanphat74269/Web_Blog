@@ -1,7 +1,7 @@
-# blog
+# Web Blog
 Trang blog cá nhân
 
-công nghệ sử dụng:
-- backend: php, mysql
-- frontend: html, css
+Công nghệ sử dụng:
+- Backend: php
+- Frontend: html, css
 
