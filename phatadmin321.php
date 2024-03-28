@@ -7,40 +7,22 @@
     <link rel="stylesheet" href="./assets/css/trang_quanly.css">
 </head>
 <body>
-    <!-- header -->
-    <div class="area"></div>
+    <div id="header-quanly">TRANG QUẢN LÝ</div>
     <nav class="main-menu">
         <ul>
-            <li class="has-subnav">
-                <a href="#">
-                    <i class="fa fa-globe fa-2x"></i>
-                    <span class="nav-text">
-                        Global Surveyors
-                    </span>
-                </a>
-            </li>
-            <li class="has-subnav">
-                <a href="#">
-                    <i class="fa fa-comments fa-2x"></i>
-                    <span class="nav-text">
-                        Group Hub Forums
-                    </span>
-                </a>
-                
-            </li>
             <li>
                 <a href="#">
-                    <i class="fa fa-map-marker fa-2x"></i>
+                    <i class="fa fa-globe"></i>
                     <span class="nav-text">
-                        Member Map
+                        Quản lý bài viết
                     </span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <i class="fa fa-info fa-2x"></i>
+                    <i class="fa fa-comments "></i>
                     <span class="nav-text">
-                        Documentation
+                        Quản lý bài viết chi tiết
                     </span>
                 </a>
             </li>
