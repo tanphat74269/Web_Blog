@@ -21,7 +21,7 @@
         <?php
             foreach($result as $item) {
                 echo '<div class="item">
-                        <a href="detail.php?id='.$item['id'].'"><img class="img" src="'.$item['hinh_anh'].'" alt=""></a>
+                <a href="detail.php?id='.$item['id'].'"><img class="img" src="uploads/'.$item['hinh_anh'].'" alt=""></a>
                         <h2><a href="detail.php?id='.$item['id'].'" class="tieudephu">'.$item['tieu_de'].'</a></h2>
                         <p class="paragraph">'.$item['trich_dan'].'</p>
                     </div>';
