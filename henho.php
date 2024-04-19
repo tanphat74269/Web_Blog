@@ -1,5 +1,6 @@
 <?php
     $tieude = 'Hẹn hò';
+    $chude = "";
     include_once('./header.php');
     require_once('./db/dbhelper.php');
 
@@ -21,7 +22,7 @@
         
 <!-- content -->
 <div id="content">
-    <h3 class="tieudechinh">Hẹn hò</h3>
+    <h3 class="tieudechinh">HẸN HÒ</h3>
     <div class="list-item">
         <?php
             foreach($result as $item) {

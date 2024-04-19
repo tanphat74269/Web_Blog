@@ -6,8 +6,8 @@ create table loai_bai_viet (
 create table ds_bai_viet (
     id int PRIMARY KEY AUTO_INCREMENT,
     loai_bai_viet_id int REFERENCES loai_bai_viet(id),
-    tieu_de varchar(500),
     hinh_anh varchar(500),
+    tieu_de varchar(500),
     trich_dan varchar(1000),
     noi_dung longtext
 );

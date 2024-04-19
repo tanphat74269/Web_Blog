@@ -1,5 +1,6 @@
 <?php
     $tieude = "Trang chủ";
+    $chude = "";
     include_once('header.php');
     require_once('./db/dbhelper.php');
 
@@ -16,7 +17,7 @@
 
 <!-- content -->
 <div id="content">
-    <h3 class="tieudechinh">Tất cả bài viết</h3>
+    <h3 class="tieudechinh">TẤT CẢ BÀI VIẾT</h3>
     <div class="list-item">
         <?php
             foreach($result as $item) {

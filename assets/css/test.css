@@ -1,0 +1,6 @@
+.modal-delete {
+    display: none;
+}
+.modal-delete.open {
+    display: block;
+}

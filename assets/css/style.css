@@ -8,6 +8,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 /* header */
 #header {
     height: 46px;
@@ -35,15 +36,15 @@ html {
 .tieudechinh {
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 150px;
     font-size: 25px;
+    color: black;
 }
 #content {   
     margin-left: 250px;
     margin-right: 250px;
     margin-top: 80px;
-    margin-bottom: 180px;
-    min-height: 515px;
+    /* min-height: 515px; */
 }
 .list-item {
     display: flex;
@@ -56,7 +57,7 @@ html {
     text-align: justify;
     margin-top: 40px;
     margin-right: 25px;
-    border: 1px solid #000;
+    border: 1px solid #7c6969;
     padding-bottom: 10px;
 }
 .item .img {
@@ -73,33 +74,39 @@ html {
     text-decoration: none;
     color: black;
     font-size: 18px;
+    width: 270px;
 }
 #content .item > h2 {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+/* content-detail */
+/* #content-detail .bai_viet {
+    width: 500px;
+} */
+
 /* ============================ */
 /* footer */
 #footer {
-    margin-bottom: 0;
     height: 50px;
     width: 100%;
     color: white;
     background-color: black;
     text-align: center;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 18px;
 }
 #footer > a {
     text-decoration: none;
-    color: #3406eb;
+    color: white;
 }
 
 /* pagination */
 #list-number {
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
-    margin-bottom: -100px;
+    margin-bottom: 100px;
     justify-content: center;
 }
 .pagination .item-pagination {
@@ -116,7 +123,7 @@ ul.pagination {
     color: #000;
 }
 .pagination li a:hover {
-    background-color: #20c1e5;
+    background-color: rgb(196, 190, 190);
 }
 
 /* ======================== */

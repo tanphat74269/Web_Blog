@@ -11,8 +11,8 @@ $tieude = $result[0]['tieu_de'];
 include_once('header.php');
 ?>
 
-<div id="content">
-    <div class="bai_viet">
+<div id="content-detail">
+    <div class="bai_viet" style="width: 700px; margin-left: 415px; margin-top: 140px; margin-bottom: 100px;">
         <?= $result[0]['noi_dung'] ?>
     </div>
 </div>

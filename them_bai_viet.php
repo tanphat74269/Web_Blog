@@ -14,7 +14,7 @@ if(!empty($_FILES)) {
 
 if(!empty($_POST)) {
     $loai_bai_viet = $_POST['loai_bai_viet'];
-    $loai_bai_viet_id = '';
+    $loai_bai_viet_id = 1;
     switch ($loai_bai_viet) {
         case 'Tiền bạc':
             $loai_bai_viet_id = 1;
@@ -40,7 +40,7 @@ if(!empty($_POST)) {
     $sql = "insert into ds_bai_viet (loai_bai_viet_id, tieu_de, hinh_anh, trich_dan, noi_dung) values ('$loai_bai_viet_id', '$tieu_de', '$newfilename', '$trich_dan', '$noi_dung')";
     execute($sql);
     //chuyen sang trang login.php
-    header('Location: trangquanly74269.php');
+    header('Location: quanlybaiviet2255.php');
     die();
 }
 ?>
@@ -50,9 +50,13 @@ if(!empty($_POST)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thêm bài viết</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/summernote/summernote-lite.min.css">
+    <script src="./assets/summernote/summernote-lite.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/img/anhdaidien.jpg">
 </head>
 <body>
     <div id="them" style="margin-left: 300px; margin-right: 300px">
@@ -71,12 +75,12 @@ if(!empty($_POST)) {
                 </select>
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Tiêu đề</label>
-                <input name="tieu_de" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Hình ảnh</label>
                 <input type="file" name="file" required> <br> 
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Tiêu đề</label>
+                <input name="tieu_de" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Trích dẫn</label>
@@ -84,10 +88,17 @@ if(!empty($_POST)) {
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nội dung</label>
-                <input name="noi_dung" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <textarea id="summernote" name="noi_dung" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Thêm</button>
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 200px; padding: 8px;">Thêm bài viết</button>
         </form>
     </div>
+    <script>
+      $('#summernote').summernote({
+        placeholder: 'Hello Bootstrap 4',
+        tabsize: 2,
+        height: 400
+      });
+    </script>
 </body>
 </html>
