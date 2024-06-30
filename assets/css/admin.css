@@ -2,7 +2,6 @@
 .img-admin {
     margin-top: 70px; 
     text-align: center;
-    /* padding-bottom: 200px; */
 }
 .admin .img {
     width: 400px;
@@ -19,7 +18,6 @@
     line-height: 25px;
 }
 
-/* ///////////////// */
 /* Responsive mobile */
 @media (max-width: 740px) {
     .admin .img{

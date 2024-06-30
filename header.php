@@ -1,3 +1,8 @@
+<?php
+require_once('./db/dbhelper.php');
+$sql = 'select * from loai_bai_viet';
+$resultNav = executeResult($sql);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +11,7 @@
     <title><?=$tieude?></title>
     <link rel="icon" type="image/x-icon" href="./assets/img/anhdaidien.jpg">
     
-    <!-- content, footer, admin -->
+    <!-- header, content, footer, admin -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/admin.css">
 </head>
@@ -14,11 +19,11 @@
     <div id="header">
         <ul class="navbar">
             <li><a href="./index.php">Trang chủ</a></li>
-            <li><a href="./tienbac.php">Tiền bạc</a></li>
-            <li><a href="./henho.php">Hẹn hò</a></li>
-            <li><a href="./dulich.php">Du lịch</a></li>
-            <li><a href="./tienganh.php">Tiếng anh</a></li>
-            <li><a href="./laptrinh.php">Lập trình</a></li>
-            <li><a href="./admin.php">Admin</a></li>
+            <?php
+                foreach($resultNav as $item) {
+                    echo '<li><a href="./category.php?loai_bai_viet='.$item['id'].'">'.$item['ten_loai'].'</a></li>';
+                }
+            ?>
+            <li><a href="admin.php">Admin</a></li>
         </ul>
     </div>

@@ -1,13 +1,12 @@
 <?php
-// pagination 
+// pagination cho mỗi trang
 if($tieude == 'Trang chủ' || $tieude == "Trang quản lý") {
     $sql = 'select count(id) as number from ds_bai_viet';
-} else if($tieude == "Phân loại bài viết") {
+} else if($tieude == "Phân loại bài viết") { // phân loại bài viết bên backend
     $sql = 'select count(id) as number from ds_bai_viet where loai_bai_viet_id like "%'.$chude.'%"';
-} else {
-    $sql = 'select count(id) as number from ds_bai_viet where loai_bai_viet_id = '.$id[0]['id'];
+} else { // trang category
+    $sql = 'select count(id) as number from ds_bai_viet where loai_bai_viet_id = '.$id;
 }
-
 $result_pagination = executeResult($sql);
 $number = 0;
 if($result_pagination != null && count($result_pagination) > 0) {
@@ -18,13 +17,12 @@ if($tieude == "Trang quản lý" || $tieude == "Phân loại bài viết") {
 } else {
     $pages = ceil($number/9); // so luong trang
 }
-
 ?>
 
 <div id="list-number">
         <ul class="pagination">
             <?php
-                // button <<
+                // ẩn hiện button <<
                 if($current_page == 1) {
                     echo '';
                 } else {
@@ -69,7 +67,7 @@ if($tieude == "Trang quản lý" || $tieude == "Phân loại bài viết") {
                     }
                 }
                 
-                // button >>
+                // ẩn hiện button >>
                 if($current_page == $pages) {
                     echo '';
                 } else {

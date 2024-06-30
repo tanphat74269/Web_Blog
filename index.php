@@ -1,16 +1,14 @@
 <?php
     $tieude = "Trang chủ";
-    $chude = "";
     include_once('header.php');
     require_once('./db/dbhelper.php');
-
-    // moi trang 8 bai viet
+    $chude = "";
+    // moi trang 9 bai viet
     $current_page = 1;
     if(isset($_GET['page'])) {
         $current_page = $_GET['page'];
     }
     $index = ($current_page-1)*9;
-
     $sql = 'select * from ds_bai_viet limit '.$index.', 9';
     $result = executeResult($sql);
 ?> 
@@ -22,7 +20,7 @@
         <?php
             foreach($result as $item) {
                 echo '<div class="item">
-                <a href="detail.php?id='.$item['id'].'"><img class="img" src="uploads/'.$item['hinh_anh'].'" alt=""></a>
+                        <a href="detail.php?id='.$item['id'].'"><img class="img" src="uploads/'.$item['hinh_anh'].'" alt=""></a>
                         <h2><a href="detail.php?id='.$item['id'].'" class="tieudephu">'.$item['tieu_de'].'</a></h2>
                         <p class="paragraph">'.$item['trich_dan'].'</p>
                     </div>';
