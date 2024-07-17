@@ -9,7 +9,7 @@ $resultNav = executeResult($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=$tieude?></title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/anhdaidien.jpg">
+    <!-- <link rel="icon" type="image/x-icon" href="./assets/img/anhdaidien.jpg"> -->
     
     <!-- header, content, footer, admin -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -24,6 +24,6 @@ $resultNav = executeResult($sql);
                     echo '<li><a href="./category.php?loai_bai_viet='.$item['id'].'">'.$item['ten_loai'].'</a></li>';
                 }
             ?>
-            <li><a href="admin.php">Admin</a></li>
+            <!-- <li><a href="admin.php">Admin</a></li> -->
         </ul>
     </div>
