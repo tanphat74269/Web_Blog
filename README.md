@@ -2,6 +2,6 @@
 Trang blog cá nhân
 
 Công nghệ sử dụng:
-- Backend: php
+- Backend: php & mysql
 - Frontend: html, css
 
